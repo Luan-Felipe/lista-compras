@@ -2,7 +2,23 @@
     <h1>{{title}}</h1>
 </div>
 <div>
-    <ul>
-        <li> {{mercadorias.descricao}} - {{mercadorias.quantidade}}</li>
-    </ul>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Nome Mercadoria
+                </th>
+                <th>
+                    Quantidade
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let mercadoria of mercadorias">
+                <td>
+                    {{mercadoria.descricao}} - {{mercadoria.quantidade}}
+                </td>
+            </tr>
+        </tbody>
+    </table>
 </div>
