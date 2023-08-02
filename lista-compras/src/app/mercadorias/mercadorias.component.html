@@ -1,24 +1,23 @@
 <div style="text-align: center">
-    <h1>{{title}}</h1>
+  <h1>{{ title }}</h1>
 </div>
 <div>
-    <table>
-        <thead>
-            <tr>
-                <th>
-                    Nome Mercadoria
-                </th>
-                <th>
-                    Quantidade
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor = "let mercadoria of mercadorias">
-                <td>
-                    {{mercadoria.descricao}} - {{mercadoria.quantidade}}
-                </td>
-            </tr>
-        </tbody>
-    </table>
+  <table class="center-hor layout-table" width="500px">
+    <thead>
+      <tr class="header-table-gray">
+        <th>Nome Mercadoria</th>
+        <th>Quantidade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="text-center" *ngFor="let mercadoria of mercadorias">
+        <td>
+          {{ mercadoria.descricao }}
+        </td>
+        <td>
+          {{ mercadoria.quantidade }}
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>
