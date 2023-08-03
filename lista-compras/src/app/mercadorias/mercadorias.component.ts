@@ -10,17 +10,27 @@ export class MercadoriasComponent implements OnInit {
   mercadorias = [
     {
       descricao: 'Arroz',
-      quantidade: 1
+      quantidade: 1,
     },
     {
       descricao: 'Feijão',
-      quantidade: 6
+      quantidade: 6,
     },
     {
       descricao: 'Óleo',
-      quantidade: 3
-    }
+      quantidade: 3,
+    },
   ];
+  adicionarItem() {
+    this.mercadorias.push({
+      descricao: this.novoItem.descricao,
+      quantidade: this.novoItem.quantidade,
+    });
+  }
+  novoItem = {
+    descricao: 'Sal',
+    quantidade: 2,
+  };
   constructor() {}
 
   ngOnInit(): void {}

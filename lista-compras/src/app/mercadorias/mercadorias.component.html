@@ -21,3 +21,20 @@
     </tbody>
   </table>
 </div>
+<div class="center-hor form-container">
+  <h3>Mercadoria</h3>
+  <input
+    type="text"
+    name="descricao"
+    [(ngModel)]="novoItem.descricao"
+    required
+  />
+  <h3>Quantidade</h3>
+  <input
+    type="text"
+    name="quantidade"
+    [(ngModel)]="novoItem.quantidade"
+    required
+  />
+  <button (click)="adicionarItem()">Adicionar</button>
+</div>

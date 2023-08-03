@@ -1,20 +1,32 @@
 .center-hor {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .layout-table,
 .layout-table th,
 .layout-table td {
-    border-style: solid;
-    border-color: #000;
-    border-width: 1px;
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px;
 }
 
 .header-table-gray {
-    background-color: gray;
+  background-color: gray;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
+}
+
+.form-container {
+  width: 600px;
+  display: flex;
+  margin-top: 5rem;
+  align-items: center;
+}
+
+input {
+  height: 1rem;
+  margin: 0 1rem 0 1rem;
 }
